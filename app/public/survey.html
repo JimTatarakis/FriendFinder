@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- CSS Styling -->
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/0a6a8a1e29.js"></script>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Materialize - Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Friend-Finder</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="container">
+        <nav>
+            <div class="nav-wrapper blue-grey darken-1">
+                <a href="#" class="brand-logo center">Friend-Finder</a>
+            </div>
+        </nav>
+    </div>
+    <br><br>
+    <!-- Form -->
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <div class="card blue-grey darken-1">
+                    <div class="card-content white-text">
+                        <span class="card-title">Enter Info Here:</span>
+                        <p>Simply fill out the form and survey and submit below! Find the Match for you TODAY!!!</p>
+                        <!-- Form Goes Here -->
+
+                        <div class="row">
+                            <form class="col s12" id="survey_form">
+                                <div class="row">
+                                    <div class="input-field col s6">
+                                        <input name="first_name" type="text" class="validate">
+                                        <label for="first_name">First Name</label>
+                                    </div>
+                                    <div class="input-field col s6">
+                                        <input name="last_name" type="text" class="validate">
+                                        <label for="last_name">Last Name</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input name="email" type="email" class="validate">
+                                        <label for="email">Email</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input name="url_link" type="url" class="validate">
+                                        <label for="url">Enter link to your picture.</label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Survey -->
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m6">
+                <div class="card blue-grey darken-1">
+                    <div class="card-content white-text">
+                        <span class="card-title">Question 1:</span>
+                        <!-- Question 1 -->
+                        <p>
+                            <span>insert question here</span>
+                        </p>
+                        <!-- Answer List 1 -->
+                        <p>
+                            <label>
+                                <input class="with-gap" name="group1" type="radio" value="1" />
+                                <span>Strongly Disagree</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input class="with-gap" name="group1" type="radio" value="2" />
+                                <span>Disagree</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input class="with-gap" name="group1" type="radio" value="3" />
+                                <span>Not Really Either or</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input class="with-gap" name="group1" type="radio" value="4" />
+                                <span>Agree</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input class="with-gap" name="group1" type="radio" value="5" />
+                                <span>Strongly Agree</span>
+                            </label>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6">
+                <div class="card blue-grey darken-1">
+                    <div class="card-content white-text">
+                        <span class="card-title">Question 2:</span>
+                        <!-- Question 2 -->
+                        <p>
+                            <span>insert question here</span>
+                        </p>
+                        <!-- Answer List 2 -->
+                        <p>
+                            <label>
+                                <input class="with-gap" name="group2" type="radio" value="1" />
+                                <span>Strongly Disagree</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input class="with-gap" name="group2" type="radio" value="2" />
+                                <span>Disagree</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input class="with-gap" name="group2" type="radio" value="3" />
+                                <span>Not Really Either or</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input class="with-gap" name="group2" type="radio" value="4" />
+                                <span>Agree</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input class="with-gap" name="group2" type="radio" value="5" />
+                                <span>Strongly Agree</span>
+                            </label>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 m6">
+                <div class="card blue-grey darken-1">
+                    <div class="card-content white-text">
+                        <span class="card-title">Question 3:</span>
+                        <!-- Question 3 -->
+                        <p>
+                            <span>insert question here</span>
+                        </p>
+                        <!-- Answer List 3 -->
+                        <p>
+                            <label>
+                                <input class="with-gap" name="group3" type="radio" value="1" />
+                                <span>Strongly Disagree</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input class="with-gap" name="group3" type="radio" value="2" />
+                                <span>Disagree</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input class="with-gap" name="group3" type="radio" value="3" />
+                                <span>Not Really Either or</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input class="with-gap" name="group3" type="radio" value="4" />
+                                <span>Agree</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input class="with-gap" name="group3" type="radio" value="5" />
+                                <span>Strongly Agree</span>
+                            </label>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6">
+                <div class="card blue-grey darken-1">
+                    <div class="card-content white-text">
+                        <span class="card-title">Question 4:</span>
+                        <!-- Question 4 -->
+                        <p>
+                            <span>insert question here</span>
+                        </p>
+                        <!-- Answer List 4 -->
+                        <p>
+                            <label>
+                                <input class="with-gap" name="group4" type="radio" value="1" />
+                                <span>Strongly Disagree</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input class="with-gap" name="group4" type="radio" value="2" />
+                                <span>Disagree</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input class="with-gap" name="group4" type="radio" value="3" />
+                                <span>Not Really Either or</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input class="with-gap" name="group4" type="radio" value="4" />
+                                <span>Agree</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input class="with-gap" name="group4" type="radio" value="5" />
+                                <span>Strongly Agree</span>
+                            </label>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 m6">
+                <div class="card blue-grey darken-1">
+                    <div class="card-content white-text">
+                        <span class="card-title">Question 5:</span>
+                        <!-- Question 5 -->
+                        <p>
+                            <span>insert question here</span>
+                        </p>
+                        <!-- Answer List 5 -->
+                        <p>
+                            <label>
+                                <input class="with-gap" name="group5" type="radio" value="1" />
+                                <span>Strongly Disagree</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input class="with-gap" name="group5" type="radio" value="2" />
+                                <span>Disagree</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input class="with-gap" name="group5" type="radio" value="3" />
+                                <span>Not Really Either or</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input class="with-gap" name="group5" type="radio" value="4" />
+                                <span>Agree</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input class="with-gap" name="group5" type="radio" value="5" />
+                                <span>Strongly Agree</span>
+                            </label>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6">
+                <div class="card blue-grey darken-1">
+                    <div class="card-content white-text">
+                        <span class="card-title">Question 6:</span>
+                        <!-- Question 6 -->
+                        <p>
+                            <span>insert question here</span>
+                        </p>
+                        <!-- Answer List 6 -->
+                        <p>
+                            <label>
+                                <input class="with-gap" name="group6" type="radio" value="1" />
+                                <span>Strongly Disagree</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input class="with-gap" name="group6" type="radio" value="2" />
+                                <span>Disagree</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input class="with-gap" name="group6" type="radio" value="3" />
+                                <span>Not Really Either or</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input class="with-gap" name="group6" type="radio" value="4" />
+                                <span>Agree</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input class="with-gap" name="group6" type="radio" value="5" />
+                                <span>Strongly Agree</span>
+                            </label>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 m6">
+                <div class="card blue-grey darken-1">
+                    <div class="card-content white-text">
+                        <span class="card-title">Question 7:</span>
+                        <!-- Question 7 -->
+                        <p>
+                            <span>insert question here</span>
+                        </p>
+                        <!-- Answer List 7 -->
+                        <p>
+                            <label>
+                                <input class="with-gap" name="group7" type="radio" value="1" />
+                                <span>Strongly Disagree</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input class="with-gap" name="group7" type="radio" value="2" />
+                                <span>Disagree</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input class="with-gap" name="group7" type="radio" value="3" />
+                                <span>Not Really Either or</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input class="with-gap" name="group7" type="radio" value="4" />
+                                <span>Agree</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input class="with-gap" name="group7" type="radio" value="5" />
+                                <span>Strongly Agree</span>
+                            </label>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6">
+                <div class="card blue-grey darken-1">
+                    <div class="card-content white-text">
+                        <span class="card-title">Question 8:</span>
+                        <!-- Question 8 -->
+                        <p>
+                            <span>insert question here</span>
+                        </p>
+                        <!-- Answer List 8 -->
+                        <p>
+                            <label>
+                                <input class="with-gap" name="group8" type="radio" value="1" />
+                                <span>Strongly Disagree</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input class="with-gap" name="group8" type="radio" value="2" />
+                                <span>Disagree</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input class="with-gap" name="group8" type="radio" value="3" />
+                                <span>Not Really Either or</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input class="with-gap" name="group8" type="radio" value="4" />
+                                <span>Agree</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input class="with-gap" name="group8" type="radio" value="5" />
+                                <span>Strongly Agree</span>
+                            </label>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 m6">
+                <div class="card blue-grey darken-1">
+                    <div class="card-content white-text">
+                        <span class="card-title">Question 9:</span>
+                        <!-- Question 9 -->
+                        <p>
+                            <span>insert question here</span>
+                        </p>
+                        <!-- Answer List 9 -->
+                        <p>
+                            <label>
+                                <input class="with-gap" name="group9" type="radio" value="1" />
+                                <span>Strongly Disagree</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input class="with-gap" name="group9" type="radio" value="2" />
+                                <span>Disagree</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input class="with-gap" name="group9" type="radio" value="3" />
+                                <span>Not Really Either or</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input class="with-gap" name="group9" type="radio" value="4" />
+                                <span>Agree</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input class="with-gap" name="group9" type="radio" value="5" />
+                                <span>Strongly Agree</span>
+                            </label>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6">
+                <div class="card blue-grey darken-1">
+                    <div class="card-content white-text">
+                        <span class="card-title">Question 10:</span>
+                        <!-- Question 10 -->
+                        <p>
+                            <span>insert question here</span>
+                        </p>
+                        <!-- Answer List 10 -->
+                        <p>
+                            <label>
+                                <input class="with-gap" name="group10" type="radio" value="1" />
+                                <span>Strongly Disagree</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input class="with-gap" name="group10" type="radio" value="2" />
+                                <span>Disagree</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input class="with-gap" name="group10" type="radio" value="3" />
+                                <span>Not Really Either or</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input class="with-gap" name="group10" type="radio" value="4" />
+                                <span>Agree</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input class="with-gap" name="group10" type="radio" value="5" />
+                                <span>Strongly Agree</span>
+                            </label>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Trigger -->
+    <div class="container">
+        <div class="row">
+            <div class="col sm12">
+                <a class="waves-effect waves-light btn modal-trigger blue-grey darken-1" href="#modal1"
+                    id="modal-btn">Submit-Form</a>
+                <!-- Modal Structure -->
+                <div id="modal1" class="modal">
+                    <div class="modal-content blue-grey darken-1 white-text">
+                        <div class="row">
+                            <div class="col s12 m6">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img id="friend_image" src="#">
+                                        <span class="card-title">You've got a Match!</span>
+                                    </div>
+                                    <div class="card-content">
+                                        <p id="friend_first_name"></p>
+                                        <p id="friend_last_name"></p>
+                                        <p id="friend_email"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer blue-grey darken-1 white-text">
+                        <a href="#!" class="modal-close waves-effect waves-green white btn-flat">Close</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="./assets/main.js"></script>
+</body>
+
+</html>
