@@ -1,15 +1,6 @@
 // auto inits all materialize javascripts
 M.AutoInit();
 
-// home btn linking to survey
-$("#survey-btn").on("submit", function(){
-  event.preventDefault();
-
-  $.ajax("/survey", {
-    type: "GET",
-  });
-});
-
 $("#modal-btn").on("submit", function (event) {
   // Make sure to preventDefault on a submit event.
   event.preventDefault();
