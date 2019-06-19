@@ -14,6 +14,11 @@ app.use(express.json());
 require("./app/routing/apiRoutes")(app);
 require("./app/routing/htmlRoutes")(app);
 
+// static public folder
+// =============================================================================
+app.use(express.static("public"));
+
+
 // listener
 // =============================================================================
 

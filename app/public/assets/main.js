@@ -1,10 +1,6 @@
-// auto inits all materialize javascripts
-M.AutoInit();
-
 $("#modal-btn").on("submit", function (event) {
   // Make sure to preventDefault on a submit event.
   event.preventDefault();
-
   // gets all survey values
   var group1Val = parseInt($("input[name='group1']:checked").val());
   var group2Val = parseInt($("input[name='group2']:checked").val());
@@ -26,26 +22,22 @@ $("#modal-btn").on("submit", function (event) {
     url_link: $("#survey_form [name=url_link]").val().trim(),
     score: scores
   };
+  console.log(newFriend);
+  console.log('im clicked');
 
   // Send the POST request.
-  $.ajax("/api/friends", {
-    type: "POST",
-    data: newFriend
-  }).then(
-    function () {
-      //  runs get request to populate the match closest to the sent question total
-      console.log("added new friend");
-      console.log(res);
-      if (res.length === 0) {
-        $('#friend_first_name').text("first name: No");
-        $('#friend_last_name').text("last name: Friend");
-        $('#friend_email').text("email: foryou@here.com");
-        $('#friend_image').attr("src", "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/6d7b3952736003.591b008d30b88.png");
-      }
-      $('#friend_first_name').text("first name: " + res.first_name);
-      $('#friend_last_name').text("last name: " + res.last_name);
-      $('#friend_email').text("email: " + res.email);
-      $('#friend_image').attr("src", res.url_link);
+  $.post("/api/friends", newFriend, function(){
+    console.log("added new friend");
+    console.log(res);
+    if (res.length === 0) {
+      $('#friend_first_name').text("first name: No");
+      $('#friend_last_name').text("last name: Friend");
+      $('#friend_email').text("email: foryou@here.com");
+      $('#friend_image').attr("src", "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/6d7b3952736003.591b008d30b88.png");
     }
-  );
+    $('#friend_first_name').text("first name: " + res.first_name);
+    $('#friend_last_name').text("last name: " + res.last_name);
+    $('#friend_email').text("email: " + res.email);
+    $('#friend_image').attr("src", res.url_link);
+  })
 });

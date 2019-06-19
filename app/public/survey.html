@@ -10,7 +10,7 @@
     <!-- Materialize - Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./assets/styles.css">
+    <link rel="stylesheet" href="/assets/styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -22,7 +22,7 @@
     <div class="container">
         <nav>
             <div class="nav-wrapper blue-grey darken-1">
-                <a href="#" class="brand-logo center">Friend-Finder</a>
+                <a href="/" class="brand-logo center">Friend-Finder</a>
             </div>
         </nav>
     </div>
@@ -506,8 +506,8 @@
     <div class="container">
         <div class="row">
             <div class="col sm12">
-                <a class="waves-effect waves-light btn modal-trigger blue-grey darken-1" href="#modal1"
-                    id="modal-btn">Submit-Form</a>
+                <button class="waves-effect waves-light btn modal-trigger blue-grey darken-1" href="#modal1" type="submit"
+                    id="modal-btn">Submit-Form</button>
                 <!-- Modal Structure -->
                 <div id="modal1" class="modal">
                     <div class="modal-content blue-grey darken-1 white-text">
@@ -536,12 +536,16 @@
     </div>
 
     <!-- JavaScript -->
+     <!-- Custom JavaScript -->
+     <script src="/assets/main.js"></script>
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <!-- Jquery -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-    <!-- Custom JavaScript -->
-    <script src="./assets/main.js"></script>
+    <script>
+    // auto inits all materialize javascripts
+        M.AutoInit();
+    </script>
 </body>
 
 </html>
