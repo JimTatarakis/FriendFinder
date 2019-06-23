@@ -9,8 +9,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Materialize - Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="/assets/styles.css">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -506,25 +505,19 @@
     <div class="container">
         <div class="row">
             <div class="col sm12">
-                <button class="waves-effect waves-light btn modal-trigger blue-grey darken-1" href="#modal1" type="submit"
-                    id="modal-btn">Submit-Form</button>
+                <button class="waves-effect waves-light btn modal-trigger blue-grey darken-1" href="#modal1"
+                    type="submit" id="modal-btn">Submit-Form</button>
                 <!-- Modal Structure -->
                 <div id="modal1" class="modal">
                     <div class="modal-content blue-grey darken-1 white-text">
                         <div class="row">
                             <div class="col s12 m6">
-                                <div class="card">
-                                    <div class="card-image">
-                                        <img id="friend_image" src="#">
-                                        <span class="card-title">You've got a Match!</span>
-                                    </div>
-                                    <div class="card-content">
-                                        <p id="friend_first_name"></p>
-                                        <p id="friend_last_name"></p>
-                                        <p id="friend_email"></p>
-                                    </div>
-                                </div>
+                                <img id="friend_image" src="#">
+                                <span class="card-title">You've got a Match!</span>
                             </div>
+                            <p id="friend_first_name"></p>
+                            <p id="friend_last_name"></p>
+                            <p id="friend_email"></p>
                         </div>
                     </div>
                     <div class="modal-footer blue-grey darken-1 white-text">
@@ -536,16 +529,16 @@
     </div>
 
     <!-- JavaScript -->
-     <!-- Custom JavaScript -->
-     <script src="/assets/main.js"></script>
     <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
-    // auto inits all materialize javascripts
+        // auto inits all materialize javascripts
         M.AutoInit();
     </script>
+    <!-- Custom JavaScript -->
+    <script src="/assets/main.js"></script>
 </body>
 
 </html>

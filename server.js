@@ -16,7 +16,7 @@ require("./app/routing/htmlRoutes")(app);
 
 // static public folder
 // =============================================================================
-app.use(express.static("public"));
+app.use(express.static("app/public"));
 
 
 // listener
